@@ -1,0 +1,36 @@
+
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+    %}
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Please select one of the following :</title>
+        <style>
+          button {
+            font-size: 24px;
+            padding: 20px 40px;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: #0004ff;
+            color: #f2e9e9;
+            border: none;
+            cursor: pointer;
+          }
+        </style>
+      </head>
+      <body>
+        <div style="display:flex;justify-content:center;align-items:center;height:100vh;">
+        <form action="/rainfall_predictor" method="post">
+            <button type="submit">Rainfall Predictor</button>
+            </form>
+        <form action="/crop_recommendor" method="post">
+            <button type="submit">Crop Recommendor</button>
+            </form>
+        <form action="/fertilizer_selector" method="post">
+            <button type="submit">Fertilizer Selector</button>
+            </form>
+        </div>
+      </body>
+    </html>
+    
+    {% endblock %}

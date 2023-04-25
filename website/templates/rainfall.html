@@ -1,0 +1,258 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+    %}
+      <h1 class="Rainfall__form">RAINFALL PREDICTION</h1>
+      <form method="POST">
+        <div class="form-group">
+            <label for="INDEX" style="font-size: 17px"><b>DISTRICT</b></label>
+            <div class="col-sm-6">
+            <select class="form-control" id="INDEX" name="INDEX"  type = number required>
+               
+              <option value="">Select District</option>
+              <option value="AHMEDNAGAR">AHMEDNAGAR</option>
+              <option value="AKOLA">AKOLA</option>
+              <option value="AKOLA CITY">AKOLA CITY</option>
+              <option value="AMRAOTI">AMRAOTI</option>
+              <option value="BEED">BEED</option>
+              <option value="BULDANA">BULDANA</option>
+              <option value="CHIKALTHANA">CHIKALTHANA</option>
+              <option value="JALGAON">JALGAON</option>
+              <option value="KOLHAPUR">KOLHAPUR</option>
+              <option value="LATUR">LATUR</option>
+              <option value="MUMBAI (KULABA)">MUMBAI (KULABA)</option>
+              <option value="MUMBAI (SANTACRUZ)">MUMBAI (SANTACRUZ)</option>
+              <option value="NAGPUR">NAGPUR</option>
+              <option value="NAGPUR CITY">NAGPUR CITY</option>
+              <option value="NANDED">NANDED</option>
+              <option value="NASHIK">NASHIK</option>
+              <option value="NASHIK  (MALEGAON)">NASHIK  (MALEGAON)</option>
+              <option value="NASIK (OZAR)">NASIK (OZAR)</option>
+              <option value="OSMANABAD">OSMANABAD</option>
+              <option value="RAIGAD (ALIBAG)">RAIGAD (ALIBAG)</option>
+              <option value="RAIGAD (BHIRA)">RAIGAD (BHIRA)</option>
+            </select>
+        </div>
+          </div>
+          
+        <div class="form-group">
+          <label for="YEAR" style="font-size: 17px"><b>YEAR</b></label>
+          <div class="col-sm-6">
+          <input
+            type="number"
+            class="form-control"
+            id="YEAR"
+            name="YEAR"
+            placeholder="Enter the value (example: 2022)"
+            required
+          />
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="MN" style="font-size: 17px"><b>MONTH</b></label>
+          <div class="col-sm-6">
+            <select class="form-control" id="MN" name="MN" required>
+              <option value="" selected disabled>Select Month</option>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="MMAX" style="font-size: 17px"><b>MMAX</b></label>
+          <div class="col-sm-6">
+          <input
+            
+            class="form-control"
+            id="MMAX"
+            name="MMAX"
+            placeholder="Enter the value (example: 50)"
+            required
+          />
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="MMIN" style="font-size: 17px"><b>MMIN</b></label>
+          <div class="col-sm-6">
+          <input
+            
+            class="form-control"
+            id="MMIN"
+            name="MMIN"
+            placeholder="Enter the value (example: 20)"
+            required
+          />
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="LMIN" style="font-size: 17px"><b>LMIN</b></label>
+          <div class="col-sm-6">
+          <input
+            
+            class="form-control"
+            id="LMIN"
+            name="LMIN"
+            placeholder="Enter the value (example: 10)"
+            required
+          />
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="MWS" style="font-size: 17px"><b>MWS</b></label>
+          <div class="col-sm-6">
+          <input
+            
+            class="form-control"
+            id="MWS"
+            name="MWS"
+            placeholder="Enter the value (example: 30)"
+            required
+          />
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="HMAX" style="font-size: 17px"><b>HMAX</b></label>
+          <div class="col-sm-6">
+          <input
+            
+            class="form-control"
+            id="HMAX"
+            name="HMAX"
+            placeholder="Enter the value (example: 30)"
+            required
+            />
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="MVP" style="font-size: 17px"><b>MVP</b></label>
+          <div class="col-sm-6">
+          <input
+            
+            class="form-control"
+            id="MVP"
+            name="MVP"
+            placeholder="Enter the value (example: 25)"
+            required
+          />
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="MLO" style="font-size: 17px"><b>MLO</b></label>
+          <div class="col-sm-6">
+          <input
+            
+            class="form-control"
+            id="MLO"
+            name="MLO"
+            placeholder="Enter the value (example: 15)"
+            required
+          />
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="MMD" style="font-size: 17px"><b>MMD</b></label>
+          <div class="col-sm-6">
+          <input
+            
+            class="form-control"
+            id="MMD"
+            name="MMD"
+            placeholder="Enter the value (example: 10)"
+            required
+          />
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="MHG" style="font-size: 17px"><b>MHG</b></label>
+          <div class="col-sm-6">
+          <input
+            
+            class="form-control"
+            id="MHG"
+            name="MHG"
+            placeholder="Enter the value (example: 40)"
+            required
+          />
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="MTC" style="font-size: 17px"><b>MTC</b></label>
+          <div class="col-sm-6">
+          <input
+            
+            class="form-control"
+            id="MTC"
+            name="MTC"
+            placeholder="Enter the value (example: 35)"
+            required
+          />
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="RD" style="font-size: 17px"><b>RD</b></label>
+          <div class="col-sm-6">
+          <input
+            
+            class="form-control"
+            id="RD"
+            name="RD"
+            placeholder="Enter the value (example: 70)"
+            required
+          />
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="HVYRF" style="font-size: 17px"><b>HVYRF</b></label>
+          <div class="col-sm-6">
+          <input
+            
+            class="form-control"
+            id="HVYRF"
+            name="HVYRF"
+            placeholder="Enter the value (example: 20)"
+            required
+          />
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="P1" style="font-size: 17px"><b>P1</b></label>
+          <div class="col-sm-6">
+          <input
+            
+            class="form-control"
+            id="P1"
+            name="P1"
+            placeholder="Enter the value (example: 10)"
+            required
+          />
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="P2" style="font-size: 17px"><b>P2</b></label>
+          <div class="col-sm-6">
+          <input
+            
+            class="form-control"
+            id="P2"
+            name="P2"
+            placeholder="Enter the value (example: 20)"
+            required
+            
+          />
+        </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top: 20px">Submit</button>
+      </form>
+    
+
+
+    {% endblock %}

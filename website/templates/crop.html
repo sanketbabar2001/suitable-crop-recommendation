@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+    %}
+    <form method="POST"></form>
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>Crop Recommendation System</title>
+</head>
+<body>
+	<h1>Crop Recommendation System</h1>
+	<form method="post" action="{{ url_for('views.crop') }}">
+		<label for="N">Nitrogen:</label>
+		<input type="number" name="N" required><br><br>
+
+		<label for="P">Phosphorus:</label>
+		<input type="number" name="P" required><br><br>
+
+		<label for="K">Potassium:</label>
+		<input type="number" name="K" required><br><br>
+
+		<label for="temperature">Temperature:</label>
+		<input  name="temperature" required><br><br>
+
+		<label for="humidity">Humidity:</label>
+		<input  name="humidity" required><br><br>
+
+		<label for="ph">pH:</label>
+		<input  name="ph" required><br><br>
+
+		<label for="rainfall">Rainfall:</label>
+		<input  name="rainfall" required><br><br>
+
+		<br><br><button id="sub" type="submit">Predict</button>
+	
+	</form>
+	<br><br><h3>{{ crop_predict }}<h3></h3>
+</body>
+</html>
+
+    
+    {% endblock %}

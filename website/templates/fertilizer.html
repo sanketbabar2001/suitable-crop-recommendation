@@ -1,0 +1,131 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+  %}
+  <form method="POST"></form>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fertilizer prediction</title>
+</head>
+<body>
+  <h1 class="Fertilizer__form">FERTILIZER PREDICTION</h1>
+  <form method="POST">
+    <div class="form-group">
+      <label for="Temparature" style="font-size: 17px"><b>Temparature</b></label>
+      <div class="col-sm-6">
+      <input
+        type="number"
+        class="form-control"
+        id="Temparature"
+        name="Temparature"
+        placeholder="Enter the value (example:50)"
+        required
+      />
+    </div>
+    </div>
+    <div class="form-group">
+      <label for="Humidity" style="font-size: 17px"><b>Humidity</b></label>
+      <div class="col-sm-6">
+      <input
+        type="number"
+        class="form-control"
+        id="Humidity"
+        name="Humidity"
+        placeholder="Enter the value (example:50)"
+        required
+      />
+    </div>
+    </div>
+    <div class="form-group">
+      <label for="Moisture" style="font-size: 17px"><b>Moisture</b></label>
+      <div class="col-sm-6">
+      <input
+        type="number"
+        class="form-control"
+        id="Moisture"
+        name="Moisture"
+        placeholder="Enter the value (example:50)"
+        required
+      />
+    </div>
+    </div>
+    <div class="form-group">
+      <label for="soil_type" style="font-size: 17px"><b>Soil Type</b></label>
+      <div class="col-sm-6">
+      <select class="form-control" id="soil_type" name="soil_type" required>
+        <option value="">Select Soil Type</option>
+        <option value="Black">Black</option>
+        <option value="Clayey">Clayey</option>
+        <option value="Loamy">Loamy</option>
+        <option value="Red">Red</option>
+        <option value="Sandy">Sandy</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="crop_type" style="font-size: 17px"><b>Crop Type</b></label>
+    <div class="col-sm-6">
+      <select class="form-control" id="crop_type" name="crop_type" required>
+        <option value="" selected disabled>Select Crop Type</option>
+        <option value="Barley">Barley</option>
+        <option value="Cotton">Cotton</option>
+        <option value="Ground Nuts">Ground Nuts</option>
+        <option value="Maize">Maize</option>
+        <option value="Millets">Millets</option>
+        <option value="Oil seeds">Oil seeds</option>
+        <option value="Paddy">Paddy</option>
+        <option value="Pulses">Pulses</option>
+        <option value="Sugarcane">Sugarcane</option>
+        <option value="Tobacco">Tobacco</option>
+        <option value="Wheat">Wheat</option>
+      </select>
+    </div>
+  </div>
+  
+    <div class="form-group">
+      <label for="Nitrogen" style="font-size: 17px"><b>Nitrogen</b></label>
+      <div class="col-sm-6">
+      <input
+        type="number"
+        class="form-control"
+        id="Nitrogen"
+        name="Nitrogen"
+        placeholder="Enter the value (example:50)"
+        required
+      />
+    </div>
+    </div>
+    <div class="form-group">
+      <label for="Potassium" style="font-size: 17px"><b>Potassium</b></label>
+      <div class="col-sm-6">
+      <input
+        type="number"
+        class="form-control"
+        id="Potassium"
+        name="Potassium"
+        placeholder="Enter the value (example:50)"
+        required
+      />
+    </div>
+    </div>
+    <div class="form-group">
+      <label for="Phosphorous" style="font-size: 17px"><b>Phosphorous</b></label>
+      <div class="col-sm-6">
+      <input
+        type="number"
+        class="form-control"
+        id="Phosphorous"
+        name="Phosphorous"
+        placeholder="Enter the value (example:50)"
+        required
+      />
+    </div>
+    </div>
+    <input type="submit" value="Predict">
+      <div class="form-group">
+      </form>	
+</body>
+</html>
+  {% endblock %}
